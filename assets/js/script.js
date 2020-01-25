@@ -72,6 +72,7 @@ $("#addItem").on("click", function (event) {
     updateStorage(); // update localStorage
     renderItems();// rerender our budget items
     $("#addItemForm form")[0].reset();
+    $("#categoryFilter").val("");
 })
 
 // 6th: wire up change event on the category select menu, show filtered budgetItems based on selection
